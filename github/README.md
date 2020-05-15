@@ -2,7 +2,6 @@
 
 Shows Github notifications and adds a shortcut to access your notifications. It uses hub for api interactions and api access.
 
-
 # Dependencies
 
 - [Hub](https://github.com/github/hub)
@@ -10,18 +9,14 @@ Shows Github notifications and adds a shortcut to access your notifications. It 
 
 # Usage
 
-Clicking the Github icon will open the notifications Github panel.
+Clicking the Github icon will open Github's notifications panel.
 
 # Config
 
-```INI
-[dunst]
-command=$SCRIPT_DIR/dunst
-interval=once
+```ini
+[github]
+command=$SCRIPT_DIR/github/github
+interval=60
 format=json
 markup=pango
-#min_width=50
-#align=center
-#DUNST_MUTE=off
 ```
-
