@@ -1,6 +1,6 @@
 # Github
 
-Shows Github notifications and adds a shortcut to access your notifications. It uses hub for api interactions and api access.
+Shows Github notifications and adds a shortcut to access your notifications. It uses [Hub](https://github.com/github/hub) for api interactions and for an API oauth token.
 
 # Dependencies
 
