@@ -14,10 +14,15 @@ import webbrowser
 
 
 def get_notifications():
-    status = json.loads(os.popen("hub api notifications").read())
+    notifications = len(json.loads(os.popen("hub api notifications").read()))
+
+    if notifications > 0:
+        return {
+            "full_text": f"<span font='Font Awesome 5 Free Solid'>&#xf09b; {notifications}</span>"
+        }
     return {
-        "full_text": f"<span font='Font Awesome 5 Free Solid'>&#xf09b; {len(status)}</span>"
-    }
+            "full_text": f"<span font='Font Awesome 5 Free Solid'>&#xf09b;</span>"
+        }
 
 
 def clicked():
