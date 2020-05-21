@@ -20,9 +20,7 @@ def get_notifications():
         return {
             "full_text": f"<span font='Font Awesome 5 Free Solid'>&#xf09b; {notifications}</span>"
         }
-    return {
-            "full_text": f"<span font='Font Awesome 5 Free Solid'>&#xf09b;</span>"
-        }
+    return {"full_text": "<span font='Font Awesome 5 Free Solid'>&#xf09b;</span>"}
 
 
 def clicked():
